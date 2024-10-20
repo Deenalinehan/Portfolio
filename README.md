@@ -1,3 +1,2 @@
-# Portfolio
-<h1>Contrubitors<h1>
+# Portfolio Contributors
 <h2>Deena Linehan<h2>
