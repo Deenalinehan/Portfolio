@@ -1,0 +1,136 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--header-bg);
+    color: var(--header-text);
+}
+h1 {
+    font-size: 2em;
+}
+.toggle-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.toggle-btn:hover {
+    opacity: 0.9;
+}
+
+main {
+    padding: 20px;
+}
+.category-container, .task-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border: 2px solid var(--input-border);
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: var(--input-text);
+    background-color: var(--input-bg);
+}
+button {
+    padding: 10px;
+    border: none;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    opacity: 0.9;
+}
+
+.category {
+    background-color: var(--task-bg);
+    border: 1px solid var(--task-border);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.category h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+.task-list li {
+    padding: 15px;
+    background-color: var(--task-bg);
+    color: var(--task-text);
+    border: 1px solid var(--task-border);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-list li span.timestamp {
+    font-size: 0.9em;
+    color: var(--button-text);
+    margin-left: 15px;
+}
+.check-complete {
+    margin-right: 15px;
+}
+
+/* Light Mode Theme */
+.light-mode {
+    --header-bg: #f5e6e8;
+    --header-text: #5f5a5a;
+    --button-bg: #f49ac2;
+    --button-text: white;
+    --input-border: #f49ac2;
+    --input-bg: #fdf0f3;
+    --input-text: #5f5a5a;
+    --task-bg: #fef0f3;
+    --task-text: #5f5a5a;
+    --task-border: #f49ac2;
+    --delete-btn-bg: #f49ac2;
+    --delete-btn-text: white;
+    background-color: #fdf0f3;
+    color: #5f5a5a;
+}
+
+.light-mode .timestamp {
+    color: var(--task-text);
+}
+
+/* Dark Mode Theme */
+.dark-mode {
+    --header-bg: #2b2b2b;
+    --header-text: #f5f5f5;
+    --button-bg: #333333;
+    --button-text: #f5f5f5;
+    --input-border: #5d5d5d;
+    --input-bg: #2b2b2b;
+    --input-text: #f5f5f5;
+    --task-bg: #333333;
+    --task-text: #f5f5f5;
+    --task-border: #5d5d5d;
+    --delete-btn-bg: #f44336;
+    --delete-btn-text: white;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
